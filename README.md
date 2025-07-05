@@ -30,14 +30,16 @@ Rcpp.package.skeleton("EpiSims", example_code = F, cpp_files = "epigen_funcs1.4.
 install.packages("./EpiSims",repos=NULL, type = "source")
 ```
 
-To set up the simulation script you have to change the working directory in epigen_caller_rev2_v4.sh to your working directory
+Simulations are run in the script Epigen_sim2.6.3.R, using functions from the EpiSims package and epigen_funcs_R1.4.1.R. To set up the simulation script you have to change the working directory in epigen_caller_rev2_v4.sh to your working directory
 Then, in the terminal, you can run all of the required simulations with
 
 ```
 sh epigen_caller_rev2_v4.sh
 ```
 
-To plot the simulation results, you have to change the .csv files that are loaded in analysis_revision.R to those that were just generated.
+To plot the simulation results, you have to change the .csv files that are loaded in analysis_rev2_v4.R to those that were just generated.
 The order that they are loaded in analysis_rev2_v4.R is the same order that the simulations are ran in epigen_caller_rev2_v4.sh
 
 analysis_rev2_v4.R can then be run interactively or as an Rscript
+
+Kickstarter_rev2_analytical_solving_v4.ipynb is an interactive Jupyter Notebook used for analytical derivations in the supplemental material.
